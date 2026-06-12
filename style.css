@@ -17,36 +17,33 @@ body{
     font-size:22px;
 }
 .navbar{
-    position:sticky;
-    top:0;
-    width:100%;
-    background:white;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:10px;
-    z-index:1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000;
 }
 .logo-container{
-    width:100%;
     display:flex;
-    justify-content:center;
     align-items:center;
 }
+
 .logo-container img{
-    width:100%;
-    max-width:700px;
-    height:auto;
+    height:70px;
+    width:auto;
     display:block;
 }
-.menu-btn{
-    font-size:35px;
-    cursor:pointer;
-    color:#1e3a8a;
-    align-self:flex-end;
-    margin-right:20px;
-}
 
+.menu-btn{
+    font-size: 24px;    /* smaller menu icon */
+    cursor: pointer;
+    color: #1e3a8a;
+    margin-left: 10px;
+}
 .college-text{
     flex:1;
     text-align:left;
@@ -167,17 +164,19 @@ div>h4{
     background:#1d4ed8;
 }
 .hero{
-    height:90vh;
+    min-height:60vh;
+
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
     color:white;
 
-    background:linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
     ),
     url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1500&q=80');
 
@@ -834,12 +833,12 @@ footer p{
 }
 
 /* Responsive Design */
-
 @media(max-width:768px){
 
     .navbar{
-        flex-direction:column;
-        gap:15px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
     }
 
     .nav-links{
@@ -892,9 +891,7 @@ footer p{
         grid-template-columns:1fr;
         text-align:center;
     }
-
 }
-
 
 .track-item,
 .speaker-card,
@@ -996,8 +993,9 @@ footer p{
     }
 
     .navbar{
-        flex-direction:column;
-        gap:15px;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
     }
 
     .about-preview{
@@ -1005,7 +1003,6 @@ footer p{
     }
 
 }
-
 .gallery{
     padding:100px 10%;
     background:#f8fafc;
