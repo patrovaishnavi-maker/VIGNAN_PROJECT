@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICNNX-2026 Conference Tracks</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(
+135deg,
+#f5f9ff,
+#eaf2ff
+);
+color:#334155;
+}
+/* =====================
+        NAVBAR
+===================== */
+.navbar{
+height:170px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 70px;
+background:white;
+box-shadow:
+0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:45px;
+}
+.logo{
+font-size:24px;
+font-weight:700;
+color:#003366;
+}
+.menu-btn{
+    font-size:40px;
+    cursor:pointer;
+    color:#1e3a8a;
+}
+.nav-links{
+    position:absolute;
+    top:100%;
+    right:20px;
+
+    width:180px;
+
+    background:#2563eb;
+
+    display:none;
+    flex-direction:column;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.nav-links li{
+    list-style:none;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.nav-links li:last-child{
+    border-bottom:none;
+}
+
+.nav-links a{
+    display:block;
+
+    padding:14px;
+
+    text-align:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#1d4ed8;
+}
+/* =====================
+        BANNER
+===================== */
+.page-banner{
+
+background:
+
+linear-gradient(
+rgba(15,61,99,.75),
+rgba(15,61,99,.75)
+),
+
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+
+
+background-size:cover;
+background-position:center;
+height:45vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.banner-content h1{
+color:white;
+font-size:55px;
+font-weight:700;
+}
+.banner-content p{
+color:#dbeafe;
+margin-top:10px;
+font-size:14px;
+}
+/* =====================
+        SECTION
+===================== */
+.container{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+.heading{
+text-align:center;
+margin-bottom:70px;
+}
+.heading h2{
+color:#003366;
+font-size:18px;
+}
+
+.line{
+width:120px;
+height:3px;
+background:#003366;
+margin:15px auto;
+}
+.heading h1{
+color:#003366;
+font-size:38px;
+}
+/* =====================
+        TIMELINE
+===================== */
+.timeline{
+position:relative;
+}
+.timeline::before{
+content:"";
+position:absolute;
+left:50px;
+top:0;
+bottom:0;
+width:3px;
+background:#003366;
+}
+
+.track{
+display:flex;
+gap:35px;
+margin-bottom:45px;
+position:relative;
+}
+
+.circle{
+width:100px;
+height:100px;
+border-radius:50%;
+background:#003366;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-weight:700;
+font-size:22px;
+flex-shrink:0;
+box-shadow:0 10px 25px rgba(0,51,102,.35);
+}
+
+.icon{
+font-size:22px;
+}
+
+.track-box{
+background:white;
+padding:30px;
+border-radius:18px;
+flex:1;
+box-shadow:0 12px 35px rgba(0,51,102,.12);
+border-left:5px solid #003366;
+transition:.3s;
+}
+.track-box:hover{
+transform:translateX(10px);
+}
+
+.track-box h2{
+color:#003366;
+font-size:24px;
+margin-bottom:18px;
+}
+
+.track-box ul{
+list-style:none;
+}
+
+.track-box li{
+margin-bottom:10px;
+font-size:14px;
+color:#475569;
+}
+
+.track-box li::before{
+content:"✓";
+color:#003366;
+font-weight:bold;
+margin-right:10px;
+}
+/* =====================
+        MOBILE
+===================== */
+@media(max-width:768px){
+.navbar{
+padding:0 20px;
+}
+
+.nav-links{
+display:none;
+}
+
+.banner-content h1{
+font-size:38px;
+}
+
+.timeline::before{
+left:35px;
+}
+
+.track{
+gap:20px;
+}
+
+.circle{
+width:70px;
+height:70px;
+font-size:18px;
+}
+
+.track-box{
+padding:20px;
+}
+
+.track-box h2{
+font-size:18px;
+}
+}
+</style>
+</head>
+<body>
+  <!-- NAVBAR -->
+
+     <nav class="navbar">
+
+       <div class="logo">
+
+    <img src="images/vignan-logo.png" >
+        </div>
+
+<div class="logo-container img" >
+    <img src="images/vigu.png">
+</div>
+        </div>
+        
+    <div class="menu-btn">
+        ☰
+    </div>
+
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tracks.html">Tracks</a></li>
+    <li><a href="dates.html">Dates</a></li>
+    <li><a href="papers.html">Papers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+
+<!-- BANNER -->
+<section class="page-banner">
+<div class="banner-content">
+<h1>ICNNX-2026</h1>
+<p>Home / Pages / Conference Tracks</p>
+</div>
+</section>
+<div class="container">
+<div class="heading">
+<h2>ICNNX-2026</h2>
+<div class="line"></div>
+<h1>Conference Tracks</h1>
+</div>
+<div class="timeline">
+<div class="track">
+<div class="circle">
+<span>01</span>
+<span class="icon">🤖</span>
+</div>
+<div class="track-box">
+<h2>
+Artificial Intelligence & Machine Learning
+</h2>
+<ul>
+<li>Deep Learning & Neural Networks</li>
+<li>Natural Language Processing (NLP)</li>
+<li>Computer Vision</li>
+<li>Explainable AI (XAI)</li>
+<li>AI in Healthcare & Smart Systems</li>
+</ul>
+</div>
+</div>
+<div class="track">
+<div class="circle">
+<span>02</span>
+<span class="icon">⚛</span>
+</div>
+<div class="track-box">
+<h2>
+Quantum Computing & Technologies
+</h2>
+<ul>
+<li>Quantum Algorithms</li>
+<li>Quantum Machine Learning</li>
+<li>Quantum Cryptography</li>
+<li>Quantum Communication</li>
+<li>Quantum Hardware & Simulators</li>
+</ul>
+</div>
+</div>
+<div class="track">
+<div class="circle">
+<span>03</span>
+<span class="icon">🔐</span>
+</div>
+<div class="track-box">
+<h2>
+Cybersecurity & Data Science
+</h2>
+<ul>
+<li>Network Security & Cryptography</li>
+<li>Blockchain Technologies</li>
+<li>Big Data Analytics</li>
+<li>Privacy-Preserving Systems</li>
+<li>Cloud & Edge Security</li>
+</ul>
+</div>
+</div>
+<div class="track">
+<div class="circle">
+<span>04</span>
+<span class="icon">👥</span>
+</div>
+<div class="track-box">
+<h2>
+Human-Centered Technologies
+</h2>
+<ul>
+<li>Human-Computer Interaction (HCI)</li>
+<li>Ethical & Responsible AI</li>
+<li>Accessible & Inclusive Technologies</li>
+<li>User Experience (UX) Design</li>
+<li>Social Impact of Technology</li>
+</ul>
+</div>
+</div>
+<div class="track">
+<div class="circle">
+<span>05</span>
+<span class="icon">🌐</span>
+</div>
+<div class="track-box">
+<h2>
+Emerging & Interdisciplinary Areas
+</h2>
+<ul>
+<li>AI + Quantum Integration</li>
+<li>Internet of Things (IoT)</li>
+<li>Smart Cities & Sustainable Systems</li>
+<li>Digital Twin Technologies</li>
+<li>Autonomous Systems</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+
+    if(navLinks.style.display === 'flex'){
+        navLinks.style.display = 'none';
+    }
+    else{
+        navLinks.style.display = 'flex';
+    }
+
+});
+
+</script>
+</html>

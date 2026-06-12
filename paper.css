@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fbff;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.bg-light{
+    background:#f1f7ff;
+}
+
+/* HERO */
+
+.cfp-hero{
+    min-height:75vh;
+
+    background:
+    linear-gradient(
+rgba(15,61,99,.75),
+rgba(15,61,99,.75)
+),
+   url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+height:45vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero-content{
+    max-width:850px;
+    padding:20px;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#f1f5f9;
+    font-size:1.54rem;
+    margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#fff;
+    color:#0d6efd;
+}
+
+.btn-primary:hover{
+    transform:translateY(-5px);
+}
+
+.btn-secondary{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#0d6efd;
+}
+
+/* TITLES */
+
+.section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.section-title span{
+    width:70px;
+    height:3px;
+    background:#0d6efd;
+}
+
+.section-title h2{
+    color:#083d77;
+    font-size:2.3rem;
+}
+
+.section-text{
+    text-align:center;
+    max-width:900px;
+    font-size:1.54rem;
+    margin:auto;
+    color:#555;
+}
+
+/* TRACKS */
+
+.tracks-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.track-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border-top:5px solid #0d6efd;
+    transition:.3s;
+}
+
+.track-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.track-card h3{
+    color:#083d77;
+}
+
+/* GUIDELINES */
+
+.guidelines-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.guideline-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border-left:5px solid #0d6efd;
+    transition:.3s;
+}
+
+.guideline-card:hover{
+    transform:translateY(-5px);
+}
+
+.guideline-card h3{
+    color:#083d77;
+    margin-bottom:10px;
+}
+
+/* PUBLICATION */
+
+.publication-section{
+    background:#eef6ff;
+    padding:100px 0;
+}
+
+.publication-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.publication-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.publication-card:hover{
+    transform:translateY(-8px);
+}
+
+.publication-card h3{
+    color:#083d77;
+    margin-bottom:10px;
+}
+
+/* INDEXING */
+
+.indexing-section{
+    text-align:center;
+    margin-top:60px;
+}
+
+.indexing-section h3{
+    color:#083d77;
+    margin-bottom:20px;
+}
+
+.indexing-badges{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.indexing-badges span{
+    background:#0d6efd;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* CTA */
+
+.cta-section{
+    background:#083d77;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta-section h2{
+    margin-bottom:20px;
+}
+
+.cta-section p{
+    color:#e5e7eb;
+    max-width:700px;
+    margin:auto auto 30px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+.section-title h2{
+    font-size:1.8rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:220px;
+    text-align:center;
+}
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f9ff;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    padding:188px;
+    text-align:center;
+    background:#ffffff;
+}
+
+.subtitle{
+    color:#0b4f8a;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:10px;
+    position:relative;
+    display:inline-block;
+}
+
+.subtitle::before,
+.subtitle::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:80px;
+    height:3px;
+    background:#0b4f8a;
+}
+
+.subtitle::before{
+    right:115%;
+}
+
+.subtitle::after{
+    left:115%;
+}
+
+.contact-section h1{
+    font-size:50px;
+    color:#083d77;
+    margin-bottom:25px;
+}
+
+.contact-text{
+    max-width:850px;
+    margin:auto;
+    color:#555;
+    font-size:26px;
+    line-height:1.8;
+}
+
+.contact-card{
+    max-width:750px;
+    margin:50px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    border-top:5px solid #0b4f8a;
+}
+
+.contact-icon{
+    width:90px;
+    height:90px;
+    background:#0b4f8a;
+    color:white;
+    font-size:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+}
+
+.contact-card h2{
+    color:#083d77;
+    margin:20px 0;
+    font-size:32px;
+}
+
+.contact-info{
+    text-align:left;
+    font-size:24px;
+    line-height:2;
+    color:#333;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#083d77;
+    color:white;
+    padding:70px 8%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:50px;
+}
+
+.footer h3{
+    color:#ffffff;
+    font-size:34px;
+    margin-bottom:20px;
+    border-bottom:3px solid #4da6ff;
+    display:inline-block;
+    padding-bottom:8px;
+}
+
+.footer p,
+.footer li{
+    font-size:18px;
+    line-height:1.9;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:8px;
+}
+
+.footer ul li::before{
+    content:"›";
+    color:#4da6ff;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.footer-bottom{
+    background:#062f59;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:17px;
+}
+
+@media(max-width:768px){
+
+.contact-section h1{
+    font-size:38px;
+}
+
+.footer h3{
+    font-size:28px;
+}
+
+.contact-card{
+    padding:25px;
+}
+}
+</style>
+</head>
+<body>
+  <nav class="navbar">
+
+       <div class="logo">
+
+    <img src="images/vignan-logo.png" >
+        </div>
+
+<div class="logo-container img" >
+    <img src="images/vigu.png">
+</div>
+        </div>
+        
+    <div class="menu-btn">
+        ☰
+    </div>
+
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tracks.html">Tracks</a></li>
+    <li><a href="dates.html">Dates</a></li>
+    <li><a href="papers.html">Papers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+
+    
+<section class="contact-section">
+
+    <div class="subtitle">ICNNX-2026</div>
+
+    <h1>Contact Us</h1>
+
+    <p class="contact-text">
+        For any queries related to the conference, publication, registration,
+        or participation, please contact the ICNNX-2026 organizing team.
+    </p>
+
+    <div class="contact-card">
+
+        <div class="contact-icon">✉</div>
+
+        <h2>Conference Contact</h2>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> conference@icnn2026.edu.in</p>
+            <p><strong>Phone:</strong> +91-8790256726</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+    <div>
+        <h3>Venue</h3>
+
+        <p>
+        Vignan's Institute of Engineering for Women,<br>
+        Kapujaggarajupeta,<br>
+        Duvvada
+        </p>
+
+        <br>
+
+        <p><strong>Mail:</strong><br>
+        view.edu.in</p>
+    </div>
+
+    <div>
+        <h3>Conference Dates</h3>
+
+        <p><strong>Day-1</strong><br>
+        27 November (Friday)</p>
+
+        <br>
+
+        <p><strong>Day-2</strong><br>
+        28 November (Saturday)</p>
+    </div>
+
+    <div>
+        <h3>Our Policies</h3>
+
+        <ul>
+            <li>Terms & Conditions</li>
+            <li>Payment Policy</li>
+            <li>Refund Policy</li>
+            <li>Privacy Policy</li>
+            <li>Publication Policy</li>
+            <li>Editorial Policy</li>
+        </ul>
+    </div>
+
+</div>
+
+</footer>
+
+<div class="footer-bottom">
+© ICNNX-2026. All Rights Reserved.
+</div>
+
+</body>
+
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+
+    if(navLinks.style.display === 'flex'){
+        navLinks.style.display = 'none';
+    }
+    else{
+        navLinks.style.display = 'flex';
+    }
+
+});
+
+</script>
+</html>

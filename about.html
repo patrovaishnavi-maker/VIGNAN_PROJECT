@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About ICNNX-2026</title>
+ <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#334155;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+
+.hero{
+    background:
+    linear-gradient(
+    rgba(11,45,75,0.88),
+    rgba(15,61,99,0.88)
+    ),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+    height:55vh;
+    color:white;
+    text-align:center;
+    padding:40px ;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    opacity:0.95;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
+    padding:90px 0;
+}
+
+/* About Section */
+
+.about-card{
+    background:white;
+    padding:60px;
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+    border-top:6px solid #c9a227;
+    margin-bottom:70px;
+}
+
+.about-card h2{
+    color:#0f3d63;
+    font-size:42px;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.about-card h2::after{
+    content:'';
+    width:90px;
+    height:4px;
+    background:#c9a227;
+    display:block;
+    margin-top:12px;
+    border-radius:20px;
+}
+
+.about-card p{
+    font-size:17px;
+    line-height:2;
+    color:#475569;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* Section Heading */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0f3d63;
+}
+
+.line{
+    width:150px;
+    height:5px;
+    margin:15px auto;
+    background:linear-gradient(to right,#0f3d63,#c9a227);
+    border-radius:50px;
+}
+
+/* Highlights */
+
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-bottom:80px;
+}
+
+.highlight-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.highlight-card:hover{
+    transform:translateY(-12px);
+    border-bottom:4px solid #c9a227;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    background:#eef5fb;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.highlight-card h3{
+    color:#0f3d63;
+    margin-bottom:12px;
+}
+
+.highlight-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* Vision Section */
+
+.vision{
+    background:linear-gradient(
+    135deg,
+    #0f3d63,
+    #1f5f8f
+    );
+    color:white;
+    padding:70px;
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(15,61,99,0.25);
+}
+
+.vision h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.vision p{
+    font-size:18px;
+    line-height:2;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Stats Section */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:80px;
+}
+
+.stat-box{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
+
+.stat-box h3{
+    font-size:40px;
+    color:#0f3d63;
+}
+
+.stat-box p{
+    color:#64748b;
+    margin-top:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.about-card{
+    padding:35px;
+}
+
+.about-card h2{
+    font-size:30px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.vision{
+    padding:35px;
+}
+
+.vision h2{
+    font-size:28px;
+}
+
+}
+
+</style>
+</head>
+<body>
+  <!-- NAVBAR -->
+
+     <nav class="navbar">
+
+       <div class="logo">
+
+    <img src="images/vignan-logo.png" >
+        </div>
+
+<div class="logo-container img" >
+    <img src="images/vigu.png">
+</div>
+        </div>
+        
+    <div class="menu-btn">
+        ☰
+    </div>
+
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tracks.html">Tracks</a></li>
+    <li><a href="dates.html">Dates</a></li>
+    <li><a href="papers.html">Papers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+<section class="hero">
+    <h1>About ICNNX-2026</h1>
+    <h3>
+        International Conference on NextGen Nexus – Bridging Artificial Intelligence,
+        Quantum Computing & Human-Centered Technologies
+    </h3>
+</section>
+
+<div class="container">
+
+    <div class="about-card">
+
+        <h2>Welcome to ICNNX-2026</h2>
+
+        <p>
+            ICNNX-2026 is envisioned as a premier global platform that brings together researchers,
+            academicians, industry professionals, innovators, and students to explore the convergence
+            of next-generation technologies shaping the future.
+        </p>
+
+        <p>
+            The conference focuses on the integration of Artificial Intelligence, Quantum Computing,
+            and Human-Centered Technologies, emphasizing interdisciplinary research that addresses
+            complex real-world challenges and fosters meaningful collaboration between academia and industry.
+        </p>
+
+        <p>
+            ICNNX-2026 highlights cutting-edge advancements in Intelligent Systems, Quantum Algorithms,
+            Cybersecurity, Data Science, Ethical AI, and Sustainable Technologies while promoting
+            inclusivity, accessibility, and responsible innovation.
+        </p>
+
+        <p>
+            Through keynote talks, technical paper presentations, panel discussions, and networking
+            opportunities, participants will gain exposure to emerging technologies, global research
+            standards, and future career opportunities.
+        </p>
+
+    </div>
+
+    <div class="section-title">
+        <h2>Conference Highlights</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="highlights">
+
+        <div class="highlight-card">
+            <div class="icon">🌍</div>
+            <h3>Global Experts</h3>
+            <p>Keynote talks from internationally renowned researchers and technology leaders.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">📄</div>
+            <h3>Research Papers</h3>
+            <p>Presentation of innovative and high-quality research contributions.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🤝</div>
+            <h3>Collaboration</h3>
+            <p>Strong interaction between academia, industry, and research communities.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🔬</div>
+            <h3>Emerging Technologies</h3>
+            <p>Explore AI, Quantum Computing, Cybersecurity, IoT, and Smart Systems.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🎓</div>
+            <h3>Student Opportunities</h3>
+            <p>Exposure to global research standards and networking opportunities.</p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="icon">🚀</div>
+            <h3>Innovation Hub</h3>
+            <p>Discover transformative solutions shaping the future of technology.</p>
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-box">
+            <h3>5+</h3>
+            <p>Conference Tracks</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>50+</h3>
+            <p>Research Topics</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>100+</h3>
+            <p>Global Participants</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>2026</h3>
+            <p>Conference Year</p>
+        </div>
+
+    </div>
+
+    <div class="vision">
+
+        <h2>Our Vision</h2>
+
+        <p>
+            Through this initiative, ICNNX-2026 aspires to become a catalyst for innovation,
+            collaboration, and impactful research, contributing to the advancement of intelligent,
+            ethical, and sustainable technological ecosystems worldwide.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+
+    if(navLinks.style.display === 'flex'){
+        navLinks.style.display = 'none';
+    }
+    else{
+        navLinks.style.display = 'flex';
+    }
+
+});
+
+</script>
+</html>
