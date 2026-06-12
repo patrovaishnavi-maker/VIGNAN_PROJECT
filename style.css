@@ -21,7 +21,7 @@ body{
     top:0;
     left:0;
     height:160px;
-    width:2130px;
+    width:100%;
     background:white;
     display:flex;
     justify-content:space-between;
@@ -36,15 +36,12 @@ body{
 }
 
 .logo-container img{
-    display: flex;
-    display: block;
-    height: 120px;
-    align-items:left;
-    width:1400px;
-    margin: 0;
-    padding: 0;
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
 }
-
 
 .menu-btn{
     font-size:40px;
