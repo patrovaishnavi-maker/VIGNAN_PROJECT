@@ -20,8 +20,8 @@ body{
     position:fixed;
     top:0;
     left:0;
+    height:130px;
     width:100%;
-    min-height:200px;
     background:white;
     display:flex;
     justify-content:space-between;
@@ -30,15 +30,17 @@ body{
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
     z-index:1000;
 }
+
 .logo{
     font-size:6px;
     margin-right:55px;
 }
 
 .logo img{
-    height:130px;
-    width:130px;
+    height:100px;
+    width:100px;
 }
+
 
 
 .nav-links{
@@ -798,6 +800,21 @@ footer p{
         grid-template-columns:1fr;
     }
 
+    .banner-container{
+    display:none;
+}
+
+.navbar{
+    height:80px;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:55px;
+    width:auto;
+}
     .footer-container{
         grid-template-columns:1fr;
         text-align:center;
@@ -1055,14 +1072,14 @@ body{
     align-items: center;
     padding: 0 5px;
 }
+
 .banner-container img{
-    width:100%;
-    max-width:1400px;
-    height:auto;
-    max-height:150px;
-    display:block;
-    object-fit:contain;
+    width: 100%;
+    max-width: 1400px;
+    height: 130px;
+    display: block;
 }
+
 .logo-container{
     flex:1;
     display:flex;
@@ -1291,78 +1308,32 @@ body{
 
 @media(max-width:768px){
 
-    .navbar{
-        min-height:120px;
-        height:auto;
-        padding:10px;
-        display:flex;
-        align-items:center;
-    }
+.hero-content h1{
+    font-size:2.8rem;
+}
 
-    .logo{
-        margin-right:10px;
+.section-title h2{
+    font-size:1.8rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:220px;
+    text-align:center;
+}
+
+
+    .navbar{
+        height: 80px;
+        padding: 5px 10px;
     }
 
     .logo img{
-        width:80px;
-        height:60px;
-        object-fit:contain;
-    }
-
-    .banner-container{
-        flex:1;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        padding:0 5px;
-    }
-
-    .banner-container img{
-        width:100%;
-        height:auto;
-        max-height:100px;
-        object-fit:contain;
-    }
-
-    .menu-btn{
-        font-size:28px;
-        padding:5px;
-    }
-
-    .hero{
-        padding-top:100px;
-        min-height:100vh;
-    }
-
-    .hero-content{
-        padding:20px;
-    }
-
-    .hero-content h1{
-        font-size:40px;
-    }
-
-    .hero-content h2{
-        font-size:22px;
-    }
-
-    .hero-content h3{
-        font-size:18px;
-    }
-
-    .conference-date,
-    .conference-venue{
-        font-size:16px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .btn,
-    .btn-outline{
-        width:220px;
-        text-align:center;
+        height: 55px;
     }
 }
