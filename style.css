@@ -1059,7 +1059,7 @@ body{
 .banner-container img{
     width: 100%;
     max-width: 1800px;
-    max-height: 110px;
+    max-height: 105px;
     height: auto;
     object-fit: contain;
     display: block;
