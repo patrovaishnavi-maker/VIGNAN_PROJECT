@@ -124,6 +124,7 @@ body{
     background-position: center;
 }
 .hero-content h1{
+
     font-size:70px;
     margin-bottom:10px;
 }
@@ -1052,7 +1053,7 @@ body{
 /* HERO */
 
 .cfp-hero{
-    min-height:85vh;
+    min-height:90vh;
     background:linear-gradient(
     rgba(8,61,119,.85),
     rgba(13,110,253,.75)),
