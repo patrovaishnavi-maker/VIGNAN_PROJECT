@@ -1374,33 +1374,7 @@ body{
    HEADER / NAVBAR FIX
    =========================== */
 
-.navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 130px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 3%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    z-index: 1000;
-}
 
-.logo-container{
-    flex: 0.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img{
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
 
 .banner-container{
     flex: 3;
