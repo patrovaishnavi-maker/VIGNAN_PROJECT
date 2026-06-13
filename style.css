@@ -1412,7 +1412,7 @@ body{
 .banner-container img{
     width: 100%;
     max-width: 1800px;
-    max-height: 220px;
+    max-height: 70px;
     height: auto;
     object-fit: contain;
     display: block;
