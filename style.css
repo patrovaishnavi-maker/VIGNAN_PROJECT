@@ -44,13 +44,15 @@ body{
     flex: 3;
     display: flex;
     justify-content: center;
+     max-height: 100px;
+    height: auto;
     align-items: center;
 }
 
 .banner-container img{
     width: 100%;
     max-width: 1900px;
-    max-height: 110px;
+    max-height: 100px;
     height: auto;
     object-fit: contain;
     display: block;
