@@ -123,10 +123,14 @@ height:55vh;
 .section-text{
     text-align:center;
     max-width:900px;
-    font-size:1.34rem;
+    font-size:1.54rem;
     margin:auto;
     color:#555;
 }
+.section-text p{
+     font-size:1.25rem;
+}
+
 
 /* TRACKS */
 
