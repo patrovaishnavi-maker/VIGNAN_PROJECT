@@ -1059,8 +1059,8 @@ body{
     align-items:left;
 }
 .banner-container img{
-    width:100%;
-    max-width:1200px;
+    width:1400px;
+    max-width:none;
     height:70px;
     max-height:150px;
     display:block;
