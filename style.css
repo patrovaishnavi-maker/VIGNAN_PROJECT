@@ -1051,7 +1051,7 @@ body{
 .banner-container{
     flex: 1;
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: center;
     height:30px;
     width:100%;
@@ -1060,10 +1060,9 @@ body{
 }
 .banner-container img{
     width:100%;
-    max-width:none;
+    max-width:1100px;
     height:70px;
     max-height:150px;
-    display:block;
     object-fit:contain;
 }
 .logo-container{
@@ -1368,5 +1367,134 @@ body{
     .btn-outline{
         width:220px;
         text-align:center;
+    }
+}
+
+/* ===========================
+   HEADER / NAVBAR FIX
+   =========================== */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.logo-container{
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.banner-container{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container img{
+    width: 100%;
+    max-width: 1800px;
+    max-height: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-btn{
+    flex: 0.8;
+    text-align: right;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* ===========================
+   HERO SECTION ADJUSTMENT
+   =========================== */
+
+.hero{
+    padding-top: 130px;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+   =========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        height: 100px;
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .banner-container{
+        flex: 1;
+    }
+
+    .banner-container img{
+        width: 100%;
+        max-height: 70px;
+        object-fit: contain;
+    }
+
+    .menu-btn{
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .hero{
+        padding-top: 100px;
+    }
+
+    .hero-content h1{
+        font-size: 45px;
+    }
+
+    .hero-content h2{
+        font-size: 24px;
+    }
+
+    .hero-content h3{
+        font-size: 18px;
+    }
+
+    .conference-date,
+    .conference-venue{
+        font-size: 16px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn,
+    .btn-outline{
+        width: 220px;
+        text-align: center;
     }
 }
