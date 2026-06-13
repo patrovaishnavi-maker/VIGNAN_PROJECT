@@ -108,15 +108,15 @@ body{
     background:#1d4ed8;
 }
 .hero{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    overflow:hidden;
     color: white;
-
+    position:relative;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1500&q=80');
 
@@ -133,6 +133,15 @@ body{
     font-size:20px;
     margin-bottom:10px;
     font-weight:500;
+}
+.hero-content{
+   position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    width:90%;
+    z-index:2;
 }
 
 .hero-content h2{
