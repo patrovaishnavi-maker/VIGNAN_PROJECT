@@ -1320,7 +1320,7 @@ body{
     .banner-container img{
         width:100%;
         height:auto;
-        max-height:100px;
+        max-height:75px;
         object-fit:contain;
     }
 
