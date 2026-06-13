@@ -1051,7 +1051,7 @@ body{
 .banner-container{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     height:30px;
     width:100%;
@@ -1060,7 +1060,7 @@ body{
 }
 .banner-container img{
     width:100%;
-    max-width:1400px;
+    max-width:900px;
     height:70px;
     max-height:150px;
     display:block;
