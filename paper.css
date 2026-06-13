@@ -27,7 +27,7 @@ body{
 /* HERO */
 
 .cfp-hero{
-    min-height:75vh;
+    height:75vh;
 
     background:
     linear-gradient(
