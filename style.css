@@ -1053,13 +1053,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:60px;
+    height:30px;
     padding: 0 2px;
 }
 .banner-container img{
     width:100%;
     max-width:1400px;
-    height:auto;
+    height:70px;
     max-height:150px;
     display:block;
     object-fit:contain;
