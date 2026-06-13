@@ -1055,6 +1055,7 @@ body{
     align-items: center;
     height:30px;
     padding: 0 2px;
+    align-items:left;
 }
 .banner-container img{
     width:100%;
