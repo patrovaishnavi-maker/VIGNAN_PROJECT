@@ -1048,22 +1048,22 @@ body{
     margin-bottom:20px;
 }
 
+
 .banner-container{
-    flex: 1;
+    flex: 3;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    height:30px;
-    width:100%;
-    padding: 0 2px;
-    align-items:left;
 }
+
 .banner-container img{
-    width:100%;
-    max-width:1100px;
-    height:70px;
-    max-height:150px;
-    object-fit:contain;
+    width: 100%;
+    max-width: 1800px;
+    max-height: 110px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 .logo-container{
     flex:1;
@@ -1370,105 +1370,3 @@ body{
     }
 }
 
-/* ===========================
-   HEADER / NAVBAR FIX
-   =========================== */
-
-
-
-.banner-container{
-    flex: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-container img{
-    width: 100%;
-    max-width: 1800px;
-    max-height: 110px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-}
-
-.menu-btn{
-    flex: 0.8;
-    text-align: right;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* ===========================
-   HERO SECTION ADJUSTMENT
-   =========================== */
-
-.hero{
-    padding-top: 130px;
-}
-
-/* ===========================
-   MOBILE RESPONSIVE
-   =========================== */
-
-@media(max-width:768px){
-
-    .navbar{
-        height: 100px;
-        padding: 10px;
-    }
-
-    .logo img{
-        width: 60px;
-        height: 60px;
-    }
-
-    .banner-container{
-        flex: 1;
-    }
-
-    .banner-container img{
-        width: 100%;
-        max-height: 70px;
-        object-fit: contain;
-    }
-
-    .menu-btn{
-        font-size: 28px;
-        padding: 5px;
-    }
-
-    .hero{
-        padding-top: 100px;
-    }
-
-    .hero-content h1{
-        font-size: 45px;
-    }
-
-    .hero-content h2{
-        font-size: 24px;
-    }
-
-    .hero-content h3{
-        font-size: 18px;
-    }
-
-    .conference-date,
-    .conference-venue{
-        font-size: 16px;
-    }
-
-    .hero-buttons{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn,
-    .btn-outline{
-        width: 220px;
-        text-align: center;
-    }
-}
