@@ -1059,7 +1059,7 @@ body{
     align-items:left;
 }
 .banner-container img{
-    width:1400px;
+    width:100%;
     max-width:none;
     height:70px;
     max-height:150px;
